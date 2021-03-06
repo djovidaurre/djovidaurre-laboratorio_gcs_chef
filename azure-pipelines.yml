@@ -79,7 +79,7 @@ steps:
     sshEndpoint: 'ssh-key'
     runOptions: 'inline' 
     inline: |
-     echo Detener el APP y Nginx MENSAJEEEEEEEEEEEEEEEEEEEEs
+     echo Detener el APP y Nginx MENSAJEEEEEEEEEEEEEEEEEEEEEEE
      sudo systemctl stop nginx
      sudo systemctl stop gcs-app.service
      echo Desintalar la APP MENSAJEEEEEEEEEEEEEEEEEEEE
@@ -91,7 +91,7 @@ steps:
      echo Cambiar de usuario MENSAJEEEEEEEEEEEEEEEEEEEE
      sudo chown -R gcs-app /usr/share/gcs-app/
      sudo chgrp -R gcs-app /usr/share/gcs-app/
-     echo Reiniciar el APP y nginx MENSAJEEEEEEEEEEEEEEEEEEEE
+     echo Reiniciar el APP y nginx MENSAJEEEEEEEEEEEEEEEEEEEEEE
      sudo systemctl restart nginx
      sudo systemctl restart gcs-app.service
      echo Habilitar el demonio MENSAJEEEEEEEEEEEEEEEEEEEE
