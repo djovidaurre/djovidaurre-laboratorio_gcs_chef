@@ -94,10 +94,18 @@ steps:
      echo Reiniciar el APP y nginx MENSAJEEEEEEEEEEEEEEEEEEEEEEE
      sudo systemctl restart nginx
      sudo systemctl restart gcs-app.service
-     echo Habilitar el demonio MENSAJEEEEEEEEEEEEEEEEEEEE
     readyTimeout: '20000'
   displayName: 'Deploy Phase - Instalar y desplegar el paquete en el servidor de prueba'
 
+- task: CopyFilesOverSSH@0
+  inputs:
+   sshEndpoint: 'ssh-key'
+   sourceFolder: '/home/vsts/'
+   contents: 'nginx.conf'
+   targetFolder: '/etc/nginx'
+   readyTimeout: '20000'
+  displayName: 'Deploy Phase - Configuracion de la aplicacion'
+  
 - task: SSH@0
   inputs:
     sshEndpoint: 'ssh-key'
