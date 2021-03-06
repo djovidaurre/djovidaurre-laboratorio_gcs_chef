@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/josueortiz90/GCS-CHEF/_apis/build/status/djovidaurre.laboratorio_gcs_chef?branchName=main)](https://dev.azure.com/josueortiz90/GCS-CHEF/_build/latest?definitionId=9&branchName=main)
+
 # Ejemplo GCS
 
 Esta aplicación web está basada en la aplicación play-scala-slick-example.
