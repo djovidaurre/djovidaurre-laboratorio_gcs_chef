@@ -64,7 +64,7 @@ steps:
     sudo sbt test
     echo FIN 1 Ejecutar test de integracion MENSAJEEEEEEEEEEEEEEEEEEEE
   displayName: 'Integration Test Phase'
-  
+
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'ssh-key'
