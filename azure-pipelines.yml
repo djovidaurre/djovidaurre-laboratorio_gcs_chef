@@ -41,7 +41,7 @@ steps:
     echo Instalar ALIEN MENSAJEEEEEEEEEEEEEEEEEEEE
     sudo add-apt-repository universe
     sudo apt install alien
-    echo Crear el build MENSAJEEEEEEEEEEEEEEEEEEEE
+    echo Crear el build MENSAJEEEEEEEEEEEEEEEEEEEEEE
     sudo sbt rpm:packageBin
     echo Fin 1 Compilar aplicacion MENSAJEEEEEEEEEEEEEEEEEEEE
     echo 2. Ejecutar test Unitario MENSAJEEEEEEEEEEEEEEEEEEEEE
