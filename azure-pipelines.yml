@@ -16,7 +16,7 @@ steps:
     echo 1. Compilar aplicacion MENSAJEEEEEEEEEEEEEEEEEEEE
     echo Inicio update MENSAJEEEEEEEEEEEEEEEEEEEE
     sudo apt-get update
-    echo Inicio java  MENSAJEEEEEEEEEEEEEEEEEEEE
+    echo Inicio java  MENSAJEEEEEEEEEEEEEEEEEEEEE
     sudo apt-get install openjdk-8-jdk
     java -version
     echo Instalacion y Descarga de scala  MENSAJEEEEEEEEEEEEEEEEEEEE 
@@ -97,15 +97,6 @@ steps:
      echo Habilitar el demonio MENSAJEEEEEEEEEEEEEEEEEEEE
     readyTimeout: '20000'
   displayName: 'Deploy Phase - Instalar y desplegar el paquete en el servidor de prueba'
-
-- task: CopyFilesOverSSH@0
-  inputs:
-   sshEndpoint: 'ssh-key'
-   sourceFolder: '/home/vsts/'
-   contents: 'nginx.conf'
-   targetFolder: '/etc/nginx'
-   readyTimeout: '20000'
-  displayName: 'Deploy Phase - Configuracion de la aplicacion'
 
 - task: SSH@0
   inputs:
