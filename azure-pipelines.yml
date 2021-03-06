@@ -91,7 +91,7 @@ steps:
      echo Cambiar de usuario MENSAJEEEEEEEEEEEEEEEEEEEE
      sudo chown -R gcs-app /usr/share/gcs-app/
      sudo chgrp -R gcs-app /usr/share/gcs-app/
-     echo Reiniciar el APP y nginx MENSAJEEEEEEEEEEEEEEEEEEEEEE
+     echo Reiniciar el APP y nginx MENSAJEEEEEEEEEEEEEEEEEEEEEEE
      sudo systemctl restart nginx
      sudo systemctl restart gcs-app.service
      echo Habilitar el demonio MENSAJEEEEEEEEEEEEEEEEEEEE
